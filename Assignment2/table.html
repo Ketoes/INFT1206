@@ -1,52 +1,110 @@
+<!--
+	Name: Ketochukwu Mario Ejikeme
+	File: table.html
+	Date: June 6th 2025
+    Tables for planets in the solar system
+	-->
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Dogs table</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Dogs Table</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Solar System Planets Table</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style>
+    td.planet-name,
+    th.planet-name {
+      border: 2px solid black;
+    }
 
-    <table>
-      <tr>
-        <td>&nbsp;</td>
-        <td>Knocky</td>
-        <td>Flor</td>
-        <td>Ella</td>
-        <td>Juan</td>
-      </tr>
-      <tr>
-        <td>Breed</td>
-        <td>Jack Russell</td>
-        <td>Poodle</td>
-        <td>Streetdog</td>
-        <td>Cocker Spaniel</td>
-      </tr>
-      <tr>
-        <td>Age</td>
-        <td>16</td>
-        <td>9</td>
-        <td>10</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>Owner</td>
-        <td>Mother-in-law</td>
-        <td>Me</td>
-        <td>Me</td>
-        <td>Sister-in-law</td>
-      </tr>
-      <tr>
-        <td>Eating Habits</td>
-        <td>Eats everyone's leftovers</td>
-        <td>Nibbles at food</td>
-        <td>Hearty eater</td>
-        <td>Will eat till he explodes</td>
-      </tr>
-    </table>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
 
+    th, td {
+      padding: 0.5em;
+      text-align: center;
+    }
 
-  </body>
+    thead {
+      background-color: #eee;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Solar System Data Table</h1>
+
+  <table>
+    <caption>Data about the planets in our solar system</caption>
+
+    <thead>
+      <tr>
+        <th colspan="2" scope="colgroup"></th>
+        <th scope="col">Mass (10²⁴kg)</th>
+        <th scope="col">Diameter (km)</th>
+        <th scope="col">Distance from Sun (10⁶ km)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="4">Terrestrial planets</th>
+        <th scope="row" class="planet-name">Mercury</th>
+        <td>0.33</td>
+        <td>4,879</td>
+        <td>57.9</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Venus</th>
+        <td>4.87</td>
+        <td>12,104</td>
+        <td>108.2</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Earth</th>
+        <td>5.97</td>
+        <td>12,756</td>
+        <td>149.6</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Mars</th>
+        <td>0.642</td>
+        <td>6,792</td>
+        <td>227.9</td>
+      </tr>
+
+      <tr>
+        <th scope="rowgroup" rowspan="4">Jovian planets</th>
+        <th scope="row" class="planet-name">Jupiter</th>
+        <td>1898</td>
+        <td>142,984</td>
+        <td>778.6</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Saturn</th>
+        <td>568</td>
+        <td>120,536</td>
+        <td>1433.5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Uranus</th>
+        <td>86.8</td>
+        <td>51,118</td>
+        <td>2872.5</td>
+      </tr>
+      <tr>
+        <th scope="row" class="planet-name">Neptune</th>
+        <td>102</td>
+        <td>49,528</td>
+        <td>4495.1</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
 </html>

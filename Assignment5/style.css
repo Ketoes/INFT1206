@@ -7,25 +7,23 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: #fff; /* changed from #dde for higher contrast */
 }
 
 body {
-  width: 80%;
-  min-width: 1024px;
-  margin: 0 auto;
+  color: #111; /* darker text for better contrast */
+  background-color: #f5f5f5; /* lighter background */
 }
 
 /* || typography */
-
-font[size="7"], font[size="6"], font[size="5"] {
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #1a1a1a; /* darker for contrast */
 }
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #111;
 }
 
 font[size="7"] {
@@ -50,9 +48,9 @@ p, li, table {
 }
 
 /* || header layout */
-
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+nav, article, footer, .secondary {
+  background-color: #005a00; /* dark green for contrast */
+  color: #fff;
 }
 
 article, footer, .secondary {
@@ -63,33 +61,33 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #c800c8; /* strong magenta for contrast */
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #fff; /* white links for contrast */
 }
 
 div[class="nav"] .search {
@@ -173,7 +171,8 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: #e0e0ff; /* higher contrast */
+  color: #111;
   padding: 10px;
 }
 
